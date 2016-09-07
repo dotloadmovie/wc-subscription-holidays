@@ -1,0 +1,30 @@
+Added holiday (date=2016-08-28 02:04:00) for user 90
+90
+Added holiday (date=2016-08-28 02:10:00) for user 90
+Finished checking holiday schedule
+Finished checking holiday schedule
+Finished checking holiday schedule
+Finished checking holiday schedule
+Added holiday (date=2016-08-26 10:03:00) for user 90
+Added holiday (date=2016-08-17 10:04:00) for user 90
+Clearing WCSH meta for user id 90
+Finished checking holiday schedule
+Clearing WCSH meta for user id 90
+Clearing WCSH meta for user id 90
+Finished checking holiday schedule
+Finished checking holiday schedule
+Added holiday (date=2016-08-18 12:54:00) for user 90
+Clearing WCSH meta for user id 90
+Added holiday (date=2016-08-18 12:58:00) for user 90
+Clearing WCSH meta for user id 90
+Added holiday (date=2016-08-19 12:59:00) for user 90
+Clearing WCSH meta for user id 90
+Added holiday (date=2016-08-24 12:59:00) for user 90
+Clearing WCSH meta for user id 90
+Finished checking holiday schedule
+Finished checking holiday schedule
+Finished checking holiday schedule
+Clearing WCSH meta for user id 90
+Finished checking holiday schedule
+Finished checking holiday schedule
+Finished checking holiday schedule

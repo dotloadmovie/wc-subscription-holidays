@@ -40,12 +40,10 @@ function activate_woocommerce_subscription_holiday() {
 
 	add_log_entry('Activating plugin...');
 
-	//Use wp_next_scheduled to check if the event is already scheduled
 	$timestamp = wp_next_scheduled( 'wcsh_check_holidays' );
 
-	//If $timestamp == false schedule daily backups since it hasn't been done previously
 	if( $timestamp == false ){
-		//Schedule the event for right now, then to repeat daily using the hook 'wi_create_daily_backup'
+		//Schedule the event for right now, then to repeat daily using the hook 'wcsh_check_holidays'
 		wp_schedule_event( time(), 'hourly', 'wcsh_check_holidays' );
 	}
 

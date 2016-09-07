@@ -63,9 +63,7 @@ class Woocommerce_Subscription_Holiday_Admin {
 	}
 
 	public function add_action_links( $links ) {
-		/*
-        *  Documentation : https://codex.wordpress.org/Plugin_API/Filter_Reference/plugin_action_links_(plugin_file_name)
-        */
+		
 		$settings_link = array(
 			'<a href="' . admin_url( 'options-general.php?page=' . $this->plugin_name ) . '">' . __('Settings', $this->plugin_name) . '</a>',
 		);
@@ -127,10 +125,6 @@ class Woocommerce_Subscription_Holiday_Admin {
 		$subscriptions = $this->get_subscriptions();
 		$api_path = plugin_dir_url( __FILE__ ) . 'api/wcsh_set_status.php';
 
-//		$active_users = $this->get_active_users();
-
-		//echo '<pre>'; print_r( _get_cron_array() ); echo '</pre>';
-
 		include_once( 'partials/woocommerce-subscription-holiday-admin-display.php' );
 	}
 
@@ -143,19 +137,6 @@ class Woocommerce_Subscription_Holiday_Admin {
 	 */
 	public function enqueue_styles() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Woocommerce_Subscription_Holiday_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Woocommerce_Subscription_Holiday_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
-
 		wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/woocommerce-subscription-holiday-admin.css', array(), $this->version, 'all' );
 
@@ -164,21 +145,8 @@ class Woocommerce_Subscription_Holiday_Admin {
 	/**
 	 * Register the JavaScript for the admin area.
 	 *
-	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Woocommerce_Subscription_Holiday_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Woocommerce_Subscription_Holiday_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		wp_enqueue_script('jquery-ui-datepicker');
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/woocommerce-subscription-holiday-admin.js', array( 'jquery' ), $this->version, false );
